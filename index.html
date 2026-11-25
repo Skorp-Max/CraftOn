@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/png" sizes="64x64" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAKJElEQVR42u1ayU8U3RbvqltV3dUD2A00qKARBSMIURZqgkFj1GjiPMbgzoUu+QNcaOICF0YxwcQh6EaIunDrkBinxGicAho7iNCKQjdT0XR3dQ236r7FeamvrKFReeZpPu6CdNWte+v+zvg7p6AIIZ6/edCev3zMApgFMAtgFsAsgH83AMZyrWnan5mbKYpCCDnc/9uphFUD7e3tfX19Ho/HDowQghAKBALpdNpxL0JIKBRSVVWSJIqiHJfzPJ/NZh3Xer1ehmGy2axlLU3TCKFVq1bt379f13Wapl01QAipqalZunRpeXm5oiiWjRBCgiDcu3dv7969NE1bEBJCOI7r7OysrKxcs2aNZTkhhGGYN2/e9Pb2Hjp0yD7LsuyrV6/Gxsa2bNliniWE+Hy+x48fl5aW3r17V9M0qyER05Bl+cCBA5IkEZeRTqcPHz5M3Mfu3buvXr3qNnvt2rVdu3a5zV6/fn3Hjh2OU5cvX4YpjLFlirFrM5VKRSIRu4opihofH89kMrlcjmVZu/cjhERRTKVSGGOMMcP8szlcTk5O5nI5jLFFkHApCIIgCBhjs53AwlQqpev69D6AEEokEt++fYtGoxZrAwBer7evr08QhHnz5sEdS5SgKIqmaTi6GQBcwvPwwwwALmmaLiwsZBjG8mqGYSx275oHKIrCGKuq6vY0mHKe7fIPjLEsy/Ai+yxCqLGx0TF+/Ggi0zQtHA5Ho1G3d2CMFy9eXFxc7PbANC+jaQDveERd158+ffqzO38HgGXZgYGBd+/ewXbONjcDDYCB5XlgbGxsRlSCEBIIBAoLC/MsyK9fVVU1TXOb1TTNTS6wczAYnBEAjHFZWdnChQtB3b8gY/BFt9lAIGAPX+a1iqLMCABCaHJyEvT4axTDsHK78Xg8nmg0GggE3KycEBIOh2dEJSDIIISA0lmSNEVRuq4TQuAvRVEURRn3wTYURVEURdM0TdPMp8QYezyeWCwmCALMWvIA/IW1sL8xBW/5IQAURQGNceR9Ho+nsLAQGItFtAghWMLzfCgUMi7NuvV4PHV1dd3d3W6zoVBo9erVllljWzcM1kysKMqTJ0/Gx8ftdAUhNDw83NfXd//+fU3TgsFgVVVVPB4Ph8PxeBy40ODg4MuXL6uqqnK5HLwbNEPTtK7rmqY1NTXdu3fPHkC9Xu+LFy/S6fTDhw8lSTLsUNd1n8/39u1bN+exaufgwYM9PT0+n88eLuAOx3GqqgLHqqioGBoaKigoGBoaommaoijIo2bzA/NACAEp8Hq9kMsc/cfgZmbB+Xy+eDy+YcOGrq6uacjczw5ZlnVdBzy/dZw9e3bbtm2OZG5GJSXHcSD1X1gLYp421hkn/oNqYjgNRVH2ksMtf/9ZRT0AOHfuXE1NzZUrVww/+Tu6EoQQqOY6Ojo+ffp09epVXdd/gRf+3wDAWXVdLyoqWrt2bTqddkvev1jUmxPtj7C3X+PVYDPQBOjp6SksLCwvL4cwbUk+mqbZ629nAHB0e5r8HQM4H8dxo6OjR44caWtrW7BggaMeIMRxHDdNSQlVHJC5S5cupVIpr9er6zrwW9Dy1NQUMBOEkK7rsixHo1FJkiRJ+sFzh0IhlmVBnENDQxRFffr0KRKJ3Lhxg6KogYGBeDyuKIoRpjKZzJw5c7Zu3To0NOT3+w0RWzOxQcjOnDlz8eLFRYsWNTc3Q+X64MGDjo6OoqKi8fHxxsbGaDT64cOHcDhcU1OTyWSePXuWTCYvXLgAx8pjS7qusyx7/vz5N2/e+P1+WZaN/lIkEkkmk7W1tYlEorKysqWlRZZl0IYoiiUlJbFY7NSpU01NTXfu3HEtMh4/ftzQ0FBaWtrR0TE2NjY5OSmKYnt7e0lJSTgcjkQifr+/vr5++/bt69atq6ura2xs3LZtW3V19e3btzHGiqKoqgr1tKIo8AObBrRq2traPB5POBwuKCjgeZ5lWYqifD5fMBgEJhIIBG7dugU5HpipoiiZTKarq6u6unrr1q2PHj0CTmVk4v9yodraWkEQ1q9fD80PsKjJyUloxUGkMyiDLMsvXrzw+/08z9M0LYoiqBX6UzRNy7Js4cA0TUuS5Pf7EULJZLK4uFgURUDFcRwIm2EYjuNyuVxJSQloTFVVXdcxxgUFBRjjRCKxdOnSWCz2nQ+A6iORCMMwDMOIouj3+w2TBe1DLZvNZhOJxJIlS1RVbWpq8nq9oiia2RXDMIODg9lstqGhAQoAc6QSRbG/v5/n+Y0bNyKEQByAk6bpiYmJYDA4PDw8NTVVVFRUVFQ0MDCwbNkyjHE6ndY0bc6cOYSQBQsWOFSxhJCjR48eO3ZMluWpqSnRNLLZbDabTafTsiw/f/58z549kiRls1lVVWVZVk0DxHn69OnW1lZCiCRJ5tlcLkcIaW1t3bhxo67roigq3w9N0yRJ2rdv3+vXr1OplCRJX758ATsEQyKEHD9+vLOz00LpGCOG8jzPcVyepkMgEAgEAl6vNw8ZZlkWFAi2ZJmtqqp6+PAh2L3d4zmOo2l67ty5BQUFHo+noqLCnnDsCYExe7O9JWgOstBxAPT214MtwQOG4VmeKS8v53ne2NCx3gBhW17h+Px3AAghfr8f3MAtFIbDYVCRW78I3AayLFTMlsPFYrFMJmOfNWd0Y8rSt5wmE/M8f+fOnVAolMvl7Fih2E8mk+/evTt58iTG2L6jruuwSXNzs52AwPPV1dVlZWW/5QOHpmmlpaXLly83alkLAJZl4/F4LBarr6+3RBhz8fr+/Xsjj/5vu3rTAFAUZeXKlTt37szzaDwe7+7u3r17d55nhoeH8/TeZgjAmSyZ43R+JxYEAbJsHidOp9N+vx/aRHYf6O3tnZiYMJpIjk5sp8NGSHD8NvUPAHDQPE4MjcH8Tuzz+SAaWqQFl2VlZYFAwK0AADYJ2d1R9h8/flyxYoWrCSWTyc+fP2cyGfABCLpG6c2y7IcPH0ZGRvr6+hydGGPM8/zXr185juvv75ckyexL0Pnp7u4eHh7u7+836JpZwJqmjY6O9vT0VFRUWNxM07RQKDRv3jyHagRjjBBqa2s7efJkcXGx8flEURSWZQ32C3TV4LqOwgMLhCxmNxJgTRCvzZvAhx/4oaoqHMBgGcbaiYkJQRBu3ry5efNmM3+hoOpBCLW0tHi93paWlkQiIYpieXn5yMhIMpkEUdE0jTEOhUILFy60HA5okiAI8+fPt7zY0RLMy+HQ/f39QIqNZh6IA75WSZIUDAZPnDhRW1t74cIF6BE6ZOK1a9e2trYmk8nR0dFUKrV48eLBwUEAAHwL9LhkyRI7gHQ6PTo6WllZmScEuUGSJKm3txdKJXAkYxPDlRmGyeVymzZtgmO4thaBV0G9B9o0XNYoeuzNHIAHBPNn62Pj26ElPUPcM5dgFsE7AMhfUv0Jw/GE1i/1fzIAR/lSs/83OgtgFsAsgFkA/2oA/wFaJzxQKBI61QAAAABJRU5ErkJggg==">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<meta name="description" content="CraftOn — виготовлення стільниць зі штучного каменю у Вінниці: кварцовий агломерат та керамограніт. Заміри, виробництво, монтаж, гарантія 10 років.">
+<title>CraftOn — стільниці зі штучного каменю у Вінниці</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Onest:wght@400;500&display=swap">
+<style>
+:root{--bg:#cdc5ba;--surface:#ddd7cd;--ink:#212121;--muted:#4f483f;--accent:#b26634;--wood:#6f3b19;--line:#b3a99b;--on-accent:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1f1a16;--surface:#2a231d;--ink:#ece4d8;--muted:#a99f91;--accent:#c9794a;--wood:#d9a272;--line:#41372d;--on-accent:#1f1a16}}
+:root[data-theme="dark"]{--bg:#1f1a16;--surface:#2a231d;--ink:#ece4d8;--muted:#a99f91;--accent:#c9794a;--wood:#d9a272;--line:#41372d;--on-accent:#1f1a16}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Onest,system-ui,Arial,sans-serif}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.brand{font-family:"Cormorant Garamond",Georgia,serif;font-size:28px;font-weight:600;letter-spacing:.14em;text-decoration:none}
+nav a{margin-left:22px;text-decoration:none;color:var(--muted);font-size:15px}
+nav a:hover{color:var(--wood)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:36px 0 72px}
+.hero h1{font-size:clamp(40px,6vw,68px)}
+.hero p{max-width:46ch;color:var(--muted);font-size:19px;margin:20px 0 28px}
+.btn{display:inline-block;background:var(--wood);color:var(--on-accent);padding:13px 26px;text-decoration:none;font-weight:500;border-radius:2px}
+.btn.alt{background:none;color:var(--ink);border:1px solid var(--line);margin-left:10px}
+.slab{aspect-ratio:2/1;transform:rotate(-3deg);box-shadow:0 18px 40px rgba(0,0,0,.22);border-radius:2px;overflow:hidden;background:#dcd6cb}
+.slab svg{display:block;width:100%;height:100%}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.facts div{padding:22px 18px;border-left:1px solid var(--line)}
+.facts div:first-child{border-left:0;padding-left:0}
+.facts b{display:block;font:600 26px "Cormorant Garamond",Georgia,serif;color:var(--wood)}
+.facts span{font-size:15px;color:var(--muted)}
+section{padding:80px 0 0}
+section>.wrap>h2{font-size:clamp(32px,4.4vw,46px);padding-bottom:12px;margin-bottom:28px;border-bottom:2px solid var(--accent);display:inline-block}
+.lead{max-width:62ch;color:var(--muted);margin:0 0 28px}
+.cols{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.card{background:var(--surface);padding:28px;border:1px solid var(--line)}
+.card h3{font-size:30px;margin-bottom:10px}
+.card p{margin:0 0 14px;color:var(--muted)}
+.spec{margin:0;padding:12px 0 0;list-style:none;border-top:1px solid var(--line);font-size:15px}
+.sw{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}
+.sw i{display:block;aspect-ratio:3/2;border-radius:2px;position:relative;
+background:linear-gradient(112deg,transparent 46%,var(--v) 47%,var(--v) 48.5%,transparent 49.5%),linear-gradient(62deg,transparent 58%,var(--v) 59%,var(--v) 59.6%,transparent 60.5%),linear-gradient(135deg,var(--a),var(--b))}
+.names{font-size:13px;color:var(--muted);margin:10px 0 0}
+.list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:0 40px}
+.list li{padding:14px 0;border-bottom:1px solid var(--line)}
+.list li.no{color:var(--muted)}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s;display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.steps li{counter-increment:s;border-top:2px solid var(--accent);padding-top:14px;font-size:15.5px}
+.steps li::before{content:counter(s);display:block;font:600 30px "Cormorant Garamond",Georgia,serif;color:var(--wood)}
+.steps b{display:block;font-weight:500;margin-bottom:4px}
+.steps span{color:var(--muted)}
+.note{margin-top:26px;padding:20px 24px;border-left:4px solid var(--accent);background:var(--surface)}
+.note p{margin:0}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.contact a.ph{display:block;font:600 30px "Cormorant Garamond",Georgia,serif;text-decoration:none;line-height:1.5}
+.contact a.ph:hover{color:var(--wood)}
+footer{margin-top:90px;padding:26px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+@media (max-width:820px){
+.hero,.cols,.contact,.list{grid-template-columns:1fr}
+.facts{grid-template-columns:1fr 1fr}.facts div:nth-child(3){border-left:0;padding-left:0}
+.steps{grid-template-columns:1fr 1fr}
+.slab{transform:none}
+header.top{flex-wrap:wrap;gap:4px 12px;padding:14px 0 6px}
+nav{display:flex;gap:20px;width:100%;overflow-x:auto;white-space:nowrap;padding:6px 0 8px;-webkit-overflow-scrolling:touch}
+nav a{margin-left:0;padding:6px 0}
+.callbar{display:block}
+body{padding-bottom:64px}
+.btn.alt{margin:10px 0 0}
+section{padding-top:60px}
+}
+@media (min-width:821px){.callbar{display:none}}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:15px 16px calc(15px + env(safe-area-inset-bottom,0px));background:var(--wood);color:var(--on-accent);text-align:center;font-weight:500;text-decoration:none}
+@media (max-width:520px){
+body{font-size:16px}
+.wrap{padding:0 16px}
+.steps{grid-template-columns:1fr}
+.hero{padding:20px 0 48px;gap:28px}
+.hero p{font-size:17px}
+.btn{display:block;text-align:center}
+.btn.alt{margin:10px 0 0}
+.facts b{font-size:22px}
+.facts div{padding:16px 12px}
+.card{padding:20px}
+.contact a.ph{font-size:27px}
+.gal{columns:2 140px;column-gap:8px}
+.gi{margin-bottom:8px}
+}
+[hidden]{display:none!important}
+.js #gallery{padding-top:28px;min-height:60vh}
+nav a[aria-current]{color:var(--ink);box-shadow:inset 0 -2px 0 var(--accent)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.gal{columns:3 250px;column-gap:12px}
+.gi{display:block;width:100%;margin:0 0 12px;padding:0;border:0;background:var(--surface);break-inside:avoid;cursor:zoom-in}
+.gi img{display:block;width:100%;height:auto}
+dialog#lb{border:0;padding:0;background:var(--surface);color:var(--ink);max-width:min(96vw,920px);max-height:94vh;overflow:auto}
+dialog#lb::backdrop{background:rgba(0,0,0,.78)}
+#lbi{display:block;max-width:100%;max-height:78vh;margin:0 auto;object-fit:contain}
+#lbc{margin:0;padding:12px 56px 14px 18px;font-size:15px;color:var(--muted)}
+#lbx{position:absolute;top:8px;right:8px;width:40px;height:40px;border:0;border-radius:50%;background:var(--accent);color:var(--on-accent);font-size:18px;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<a class="brand" href="#home">CraftOn</a>
+<nav><a href="#materials">Матеріали</a><a href="#services">Послуги</a><a href="#gallery">Портфоліо</a><a href="#process">Як ми працюємо</a><a href="#contacts">Контакти</a></nav>
+</header>
+
+<div class="hero" id="top">
+<div>
+<h1>Стільниці зі штучного каменю</h1>
+<p>Власне виробництво у Вінниці: від заміру до монтажу. Кварцовий агломерат і широкоформатний керамограніт під ваш проєкт.</p>
+<a class="btn" href="#contacts">Записатися на замір</a><a class="btn alt" href="#materials">Дивитися матеріали</a>
+</div>
+<div class="slab" aria-hidden="true">
+<svg viewBox="0 0 400 200" preserveAspectRatio="none">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1eee8"/><stop offset="1" stop-color="#d9d3c8"/></linearGradient></defs>
+<rect width="400" height="200" fill="url(#g)"/>
+<path d="M-10 40 C90 70 120 20 200 90 S330 120 410 70" fill="none" stroke="#3b3631" stroke-width="5" opacity=".85"/>
+<path d="M60 -10 C80 60 140 80 150 130 S190 190 230 215" fill="none" stroke="#8a8174" stroke-width="1.6"/>
+<path d="M240 -10 C250 40 300 60 330 110 S380 170 410 160" fill="none" stroke="#8a8174" stroke-width="1.2"/>
+<path d="M-10 150 C60 130 100 170 170 150" fill="none" stroke="#a79f92" stroke-width="1"/>
+</svg>
+</div>
+</div>
+
+<div class="facts">
+<div><b>10 років</b><span>досвіду</span></div>
+<div><b>10 років</b><span>гарантії</span></div>
+<div><b>3200×1600</b><span>мм, формат слебів</span></div>
+<div><b>09:00–18:00</b><span>графік роботи</span></div>
+</div>
+</div>
+
+<section id="materials"><div class="wrap">
+<h2>Матеріали</h2>
+<p class="lead">Працюємо з двома матеріалами. Обидва добре витримують щоденне навантаження на кухні та у ванній.</p>
+<div class="cols">
+<article class="card">
+<h3>Кварцит</h3>
+<p><b>Кварцовий агломерат</b> створений для інтенсивної експлуатації в домашніх і комерційних інтер’єрах. Поверхня гладка, непориста, не вбирає рідин, тому за нею легко доглядати. Фактури від спокійних однотонних до виразних кам’яних візерунків.</p>
+<ul class="spec"><li>Товщина: 2 см</li></ul>
+<div class="sw" aria-hidden="true">
+<i style="--a:#a9a69f;--b:#8f8c85;--v:#e8e6e0"></i>
+<i style="--a:#f5f4f1;--b:#e9e7e2;--v:#1f1e1d"></i>
+<i style="--a:#efebe4;--b:#e0d9cc;--v:#8d7a5e"></i>
+<i style="--a:#151515;--b:#232221;--v:#8a8884"></i>
+</div>
+<p class="names">Calacatta Gris Fonce, Calacatta Ajaccio, Patagonia Martinica, Savoie</p>
+</article>
+<article class="card">
+<h3>Керамограніт</h3>
+<p><b>Широкоформатний керамограніт</b> має велику площу плит, візуально розширює простір і дає цілісні поверхні. Він міцний, зносостійкий і майже не вбирає воду. Підходить для кухонь, ванних, меблевих фасадів і стільниць.</p>
+<ul class="spec"><li>Товщина: 3, 6 або 12 мм</li></ul>
+<div class="sw" aria-hidden="true">
+<i style="--a:#1a1a1a;--b:#2b2a29;--v:#58544f"></i>
+<i style="--a:#f6f3ee;--b:#ebe5da;--v:#a0825a"></i>
+<i style="--a:#dcd3c4;--b:#cbc0ae;--v:#f1ece3"></i>
+<i style="--a:#1c1d20;--b:#2a2a2c;--v:#b99a62"></i>
+</div>
+<p class="names">Aurora Black, Calacatta Dorato, Travertino Stone Beige, Portoro Matt</p>
+</article>
+</div>
+</div></section>
+
+<section id="services"><div class="wrap">
+<h2>Послуги</h2>
+<ul class="list">
+<li>Виготовлення стільниць</li>
+<li>Підвіконня</li>
+<li>Мийки для кухні та ванної кімнати</li>
+<li>Барні стійки</li>
+<li>Порізка плитки широкого формату</li>
+<li>Реставрація за погодженням</li>
+<li class="no">Полірування лицьової поверхні не виконуємо</li>
+</ul>
+</div></section>
+
+<section id="gallery"><div class="wrap"><h2>Портфоліо</h2><p class="lead">Наші реалізовані роботи: умивальні зі вбудованими мийками, стільниці, панелі та підвіконня. Натисніть на фото, щоб збільшити.</p><p><a href="#home" style="color:var(--wood)">Повернутися на головну</a></p><div class="gal"></div></div></section>
+
+<section id="why"><div class="wrap">
+<h2>Чому CraftOn</h2>
+<ul class="list">
+<li>Гарантія 10 років</li>
+<li>Тільки якісні матеріали</li>
+<li>Швидкі заміри та консультація</li>
+<li>Точність і якість виконання</li>
+<li>Індивідуальне виготовлення під проєкт</li>
+<li>Великий вибір декорів і фактур</li>
+</ul>
+</div></section>
+
+<section id="process"><div class="wrap">
+<h2>Як ми працюємо</h2>
+<ol class="steps">
+<li><b>Замір і консультація</b><span>Виїзд за попереднім записом</span></li>
+<li><b>Узгодження</b><span>Матеріал, колір і технічне завдання перед стартом</span></li>
+<li><b>Виробництво</b><span>За затвердженим проєктом і в погоджені строки</span></li>
+<li><b>Доставка і монтаж</b><span>Професійний монтаж у погоджений день</span></li>
+<li><b>Гарантія</b><span>Післямонтажна підтримка</span></li>
+</ol>
+<div class="note"><p><b>Оплата.</b> Передоплата за матеріал, решта після виконання робіт.</p></div>
+<div class="note"><p><b>Для дизайнерів і партнерів.</b> Партнерська винагорода становить 10% від вартості проєкту.</p></div>
+</div></section>
+
+<section id="contacts"><div class="wrap">
+<h2>Контакти</h2>
+<div class="contact">
+<div>
+<p class="lead" style="margin-bottom:8px">Виробництво</p>
+<p style="margin:0;font-size:20px">м. Вінниця, Сабарівське шосе, 13</p>
+<p class="lead" style="margin:18px 0 0">Працюємо з 09:00 до 18:00. Виїзд на заміри за попереднім записом.</p>
+</div>
+<div>
+<p class="lead" style="margin-bottom:4px">Олексій</p>
+<a class="ph" href="tel:+380930943228">+38 (093) 094-32-28</a>
+<a class="ph" href="tel:+380685858081">+38 (068) 585-80-81</a>
+</div>
+</div>
+</div></section>
+
+<a class="callbar" href="tel:+380930943228">Зателефонувати Олексію</a>
+<div class="wrap"><footer>CraftOn — майстерність, що не стирається часом</footer></div>
+<dialog id="lb"><button id="lbx" type="button" aria-label="Закрити">✕</button><img id="lbi" alt=""><p id="lbc"></p></dialog>
+<script>
+(function(){var d=document.getElementById('lb'),i=document.getElementById('lbi'),c=document.getElementById('lbc');
+document.querySelector('.gal').addEventListener('click',function(e){var b=e.target.closest('.gi');if(!b)return;var im=b.querySelector('img');i.src=im.src;i.alt=im.alt;c.textContent=b.getAttribute('data-c');d.showModal();});
+d.addEventListener('click',function(e){if(e.target!==i&&e.target!==c)d.close();});
+document.getElementById('lbx').addEventListener('click',function(){d.close();});})();
+</script>
+<script>
+(function(){
+var views={gallery:['#gallery'],home:['.hero','.facts','#why','#materials','#services','#process','#contacts']};
+var all=[],k;
+for(k in views){views[k].forEach(function(s){var e=document.querySelector(s);if(e&&all.indexOf(e)<0)all.push(e);});}
+var links=document.querySelectorAll('nav a');
+function show(){
+var n=location.hash.replace('#','');
+var target=document.getElementById(n);
+if(n!=='gallery')n='home';
+all.forEach(function(e){e.hidden=true;});
+views[n].forEach(function(s){var e=document.querySelector(s);if(e)e.hidden=false;});
+links.forEach(function(a){if(a.getAttribute('href')==='#'+n)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+if(n==='home'&&target){target.scrollIntoView();}else{window.scrollTo(0,0);}
+}
+document.documentElement.classList.add('js');
+window.addEventListener('hashchange',show);
+show();
+})();
+</script>
+<script>
+(function(){
+var REPO='Skorp-Max/CraftOn',DIR='photos';
+var gal=document.querySelector('.gal');
+if(!gal||!window.fetch)return;
+fetch('https://api.github.com/repos/'+REPO+'/contents/'+DIR).then(function(r){return r.ok?r.json():[];}).then(function(list){
+if(!Array.isArray(list))return;
+list.filter(function(f){return f.type==='file'&&/\.(jpe?g|png|webp)$/i.test(f.name);})
+.sort(function(a,b){return a.name.localeCompare(b.name,'uk',{numeric:true});})
+.forEach(function(f){
+var cap=f.name.replace(/\.[^.]+$/,'').replace(/^\d+[\s._-]*/,'').replace(/_+/g,' ').trim()||'Фото';
+var b=document.createElement('button');b.type='button';b.className='gi';b.setAttribute('data-c',cap);
+var im=new Image();im.loading='lazy';im.alt=cap;
+im.onerror=function(){b.remove();};
+im.src=DIR+'/'+encodeURIComponent(f.name);
+b.appendChild(im);gal.appendChild(b);
+});
+}).catch(function(){});
+})();
+</script>
+</body>
+</html>
